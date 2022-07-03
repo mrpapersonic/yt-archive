@@ -39,4 +39,5 @@ jobs:
           while IFS="" read -r p || [ -n "$p" ]
           do
             tubeup $p --use-download-archive || true
+            tubeup $p --get-comments || true
           done < result.log
